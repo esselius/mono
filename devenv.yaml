@@ -5,5 +5,13 @@ inputs:
   nixpkgs-unstable:
     url: github:nixos/nixpkgs/nixpkgs-unstable
 
+nixpkgs:
+  permittedUnfreePackages:
+    - 1password-cli
+
+secretspec:
+  enable: true
+
 imports:
   - ./opencode
+  - ./secrets

@@ -16,5 +16,12 @@ in
 
   files.${opencode-config}.json = {
     "$schema" = "https://opencode.ai/config.json";
+    "mcp" = {
+      context7 = {
+        type = "remote";
+        url = "https://mcp.context7.com/mcp";
+        headers.CONTEXT7_API_KEY = config.secretspec.secrets.CONTEXT7_API_KEY;
+      };
+    };
   };
 }
