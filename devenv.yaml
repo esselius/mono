@@ -4,6 +4,8 @@ inputs:
     url: github:cachix/devenv-nixpkgs/rolling
   nixpkgs-unstable:
     url: github:nixos/nixpkgs/nixpkgs-unstable
+  nixvim:
+    url: github:nix-community/nixvim
 
 nixpkgs:
   permittedUnfreePackages:
@@ -16,3 +18,4 @@ imports:
   - ./opencode
   - ./secrets
   - ./housekeeping
+  - ./neovim
