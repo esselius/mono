@@ -1,4 +1,5 @@
 {
+  # Colors
   colorschemes.catppuccin.enable = true;
 
   globals.mapleader = " ";
@@ -9,13 +10,20 @@
     undofile = true;
   };
 
-  plugins.auto-save.enable = true;
+  plugins = {
+    # File picker sidebar
+    neo-tree.enable = true;
+    web-devicons.enable = true; # neo-tree
 
-  # Auto-format on save
-  plugins.conform-nvim = {
-    enable = true;
-    settings = {
-      format_on_save.timeout_ms = 100;
+    # Auto-save
+    auto-save.enable = true;
+
+    # Auto-format on save
+    conform-nvim = {
+      enable = true;
+      settings = {
+        format_on_save.timeout_ms = 100;
+      };
     };
   };
 }
