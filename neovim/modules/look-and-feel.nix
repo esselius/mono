@@ -17,13 +17,5 @@
 
     # Auto-save
     auto-save.enable = true;
-
-    # Auto-format on save
-    conform-nvim = {
-      enable = true;
-      settings = {
-        format_on_save.timeout_ms = 100;
-      };
-    };
   };
 }
