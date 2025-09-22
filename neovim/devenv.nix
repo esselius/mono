@@ -19,7 +19,7 @@ in
     enable = lib.mkEnableOption "Enable Neovim devenv module.";
     modulePath = lib.mkOption {
       type = lib.types.path;
-      default = ./nixvim-module.nix;
+      default = ./modules;
       description = "Path to the Nixvim module configuration.";
     };
     nixvimInput = lib.mkOption {
