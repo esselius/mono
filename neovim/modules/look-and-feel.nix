@@ -17,5 +17,17 @@
 
     # Auto-save
     auto-save.enable = true;
+
+    # status line
+    airline.enable = true;
+    # buffer tabs
+    bufferline.enable = true;
+    # syntax highlighting
+    treesitter.enable = true;
+
+    # show line author/commit
+    gitblame.enable = true;
+    # indicate changed lines
+    gitgutter.enable = true;
   };
 }
