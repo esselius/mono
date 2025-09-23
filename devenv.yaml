@@ -13,9 +13,3 @@ nixpkgs:
 
 secretspec:
   enable: true
-
-imports:
-  - ./opencode
-  - ./secrets
-  - ./housekeeping
-  - ./neovim

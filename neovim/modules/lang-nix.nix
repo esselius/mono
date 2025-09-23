@@ -2,8 +2,15 @@
   plugins = {
     # Syntax highlighting and tab completion
     lsp = {
-      enable = true;
-      servers.nixd.enable = true;
+      servers = {
+        nixd = {
+          enable = true;
+          settings = {
+            nixpkgs.expr = "import <nixpkgs> {}";
+          };
+        };
+        statix.enable = true;
+      };
     };
 
     # Auto-format on save

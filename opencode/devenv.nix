@@ -6,13 +6,6 @@
   ...
 }:
 
-# Opencode devenv module
-# Options:
-#   enable: Enable the module (default: true)
-#   configPath: Path to generated config file (default: ${config.devenv.dotfile}/opencode.json)
-#   mcp.context7.enable: Enable context7 MCP integration (default: false)
-#   mcp.context7.apiKey: API key override (default: from secrets)
-#   extraPackages: Additional packages to install
 let
   cfg = config.opencode;
   mcpCfg = cfg.mcp.context7;

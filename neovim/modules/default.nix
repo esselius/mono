@@ -1,8 +1,8 @@
 {
   imports = [
-    ./opencode.nix
-    ./look-and-feel.nix
-    ./lang-nix.nix
     ./housekeeping.nix
+    ./lang-nix.nix
+    ./look-and-feel.nix
+    ./opencode.nix
   ];
 }
