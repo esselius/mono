@@ -6,6 +6,8 @@ inputs:
     url: github:nixos/nixpkgs/nixpkgs-unstable
   nixvim:
     url: github:nix-community/nixvim
+  microvm:
+    url: github:microvm-nix/microvm.nix
 
 nixpkgs:
   permittedUnfreePackages:

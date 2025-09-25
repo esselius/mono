@@ -10,5 +10,6 @@
     ./neovim/devenv.nix
     ./opencode/devenv.nix
     ./secrets/devenv.nix
+    ./microvm/devenv.nix
   ];
 }
