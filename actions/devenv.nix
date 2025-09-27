@@ -42,6 +42,10 @@ let
         type = lib.types.nullOr lib.types.str;
         default = null;
       };
+      env = lib.mkOption {
+        type = lib.types.nullOr lib.types.attrs;
+        default = null;
+      };
     };
   };
 in

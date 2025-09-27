@@ -13,3 +13,4 @@ nixpkgs:
 
 secretspec:
   enable: true
+  provider: env
