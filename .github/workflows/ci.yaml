@@ -9,3 +9,6 @@ jobs:
     - run: devenv test
 'on':
   push: {}
+permissions:
+  contents: read
+  id-token: write

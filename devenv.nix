@@ -18,6 +18,10 @@
   actions = {
     enable = true;
     workflows.ci = {
+      permissions = {
+        id-token = "write";
+        contents = "read";
+      };
       jobs.test.steps = [
         { uses = "actions/checkout@v4"; }
         { uses = "DeterminateSystems/determinate-nix-action@v3"; }

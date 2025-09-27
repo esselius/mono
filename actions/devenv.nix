@@ -18,6 +18,9 @@ let
       jobs = lib.mkOption {
         type = lib.types.attrsOf jobModule;
       };
+      permissions = lib.mkOption {
+        type = lib.types.attrsOf lib.types.str;
+      };
     };
   };
   jobModule = lib.types.submodule {
