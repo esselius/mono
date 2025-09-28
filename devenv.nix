@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
   opencode = {
@@ -31,5 +31,10 @@
         { run = "devenv test"; }
       ];
     };
+  };
+
+  outputs.booli = config.languages.python.import ./src/booli {
+    python = pkgs.python313;
+    packageName = "booli";
   };
 }
