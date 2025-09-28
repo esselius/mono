@@ -13,6 +13,7 @@
     ./neovim/devenv.nix
     ./opencode/devenv.nix
     ./secrets/devenv.nix
+    ./uv2nix/devenv.nix
   ];
 
   actions = {
